@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fefefe;
+    font-weight: bold;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
+img{
+  height: 400px;
+  width: 600px;
+  margin-bottom: 5em;
+  margin-top: 5em;
+  margin-left: 3em;
+  border-radius: 15px;
+}
+
+.board{
+  border: solid 3px;
+  border-color: #fff;
+  width: 100%;
+  margin: 6em 18em 6em 8em;
+  border-radius: 5px;
+  padding-top: 20px;
+}
+
+.select1, .select2, .select3, 
+.select4, .select5, .select6, .select7{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5em;
+}
+.Valider{
+  margin-left: 30em;
+  margin-bottom: 10px;
+  background-color: #fff;
+  height: 50px;
+  width: 70px;
+}
+
+.reset{
+  margin-left: 10em;
+  margin-bottom: 10px;
+  background-color: #fff;
+  height: 50px;
+  width: 70px;
+}
+
+.Valider:active, .reset:active{
+  background-color: bisque  ;
+}
+
+.green{
+ background-color: green;
+ transition: ease-in-out 0.5s;
+}
+
+.red{
+  transition: ease-in-out 0.5s;
+  background-color: red;
+}
