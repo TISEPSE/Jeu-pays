@@ -70,21 +70,18 @@
   margin-left: 4em;
 }
 
-.container-img {
-  background-color: #002533;
-}
-
 .img2 {
   background: none;
   height: 40px;
   width: 300px;
-  margin: 1.8em; /* Ajusté pour éviter l'espacement vertical */
+  margin: 1em; 
 }
 
 .container-img {
   display: flex;
-  align-items: center; /* Aligne verticalement le logo et la navbar */
+  align-items: center; 
   justify-content: space-between;
+  background-color: #002533;
 }
 
 ul {
@@ -96,15 +93,63 @@ ul {
 }
 
 .nav-ul {
-  display: flex; /* Flex pour aligner horizontalement les éléments */
+  display: flex; 
 }
 
 li {
-  margin: 0 1.4em; /* Marge horizontale entre les éléments */
+  margin: 0 1.4em; 
 }
 
-a {
-  background: none;
+.nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1em; 
+  background-color: #002533; 
+}
+
+.container-img {
+  display: flex;
+  align-items: center; 
+}
+
+.img2 {
+  height: 35px; 
+  width: auto; 
+}
+
+.nav-ul {
+  display: flex; 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+li {
+  margin: 0 1em; 
+}
+
+.Download{
+  display: flex;
+  align-items: center; 
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #FEFEFE;
+  background-color: #002533;
+  border: 2px solid #FEFEFE;
+  font-size: 2vh;
+  padding: 0.5em 1em; 
+  border-radius: 5px; 
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+.Download:hover{
+  color: #002533; 
+  background-color: #FEFEFE; 
+}
+
+.a{
   display: flex;
   align-items: center; 
   font-family: sans-serif;
@@ -113,12 +158,13 @@ a {
   background-color: #fcc220;
   font-size: 2vh;
   padding: 0.5em 1em; 
-  border-radius: 5px;
+  border-radius: 5px; 
+  margin-top: 2px;
   text-decoration: none;
   transition: ease-in-out 0.2s;
 }
 
-a:hover {
-  color: #fcc220;
-  background-color: #FEFEFE;
+.a:hover{
+  color: #fcc220; 
+  background-color: #FEFEFE; 
 }
