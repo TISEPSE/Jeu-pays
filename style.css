@@ -65,3 +65,7 @@ img{
   transition: ease-in-out 0.5s;
   background-color: red;
 }
+
+.top-select{
+  margin-left: 4em;
+}
