@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #fefefe;
+    background-color: #20374b;
     font-weight: bold;
 }
 
@@ -11,9 +11,9 @@
   flex-direction: row;
 }
 
-img{
-  height: 400px;
-  width: 600px;
+.img1{
+  height: 500px;
+  width: 700px;
   margin-bottom: 5em;
   margin-top: 5em;
   margin-left: 3em;
@@ -68,4 +68,57 @@ img{
 
 .top-select{
   margin-left: 4em;
+}
+
+.container-img {
+  background-color: #002533;
+}
+
+.img2 {
+  background: none;
+  height: 40px;
+  width: 300px;
+  margin: 1.8em; /* Ajusté pour éviter l'espacement vertical */
+}
+
+.container-img {
+  display: flex;
+  align-items: center; /* Aligne verticalement le logo et la navbar */
+  justify-content: space-between;
+}
+
+ul {
+  background: none;
+  display: flex;
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.nav-ul {
+  display: flex; /* Flex pour aligner horizontalement les éléments */
+}
+
+li {
+  margin: 0 1.4em; /* Marge horizontale entre les éléments */
+}
+
+a {
+  background: none;
+  display: flex;
+  align-items: center; 
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #FEFEFE;
+  background-color: #fcc220;
+  font-size: 2vh;
+  padding: 0.5em 1em; 
+  border-radius: 5px;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+a:hover {
+  color: #fcc220;
+  background-color: #FEFEFE;
 }
