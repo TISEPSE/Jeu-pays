@@ -6,63 +6,92 @@
 background-color: #20374b;
 }
 
-.container{
+.container {
   display: flex;
-  flex-direction: row;
-background-color: none;
+  justify-content: space-around; /* Garde les éléments espacés horizontalement */
+  align-items: center; /* Centrer verticalement */
+  flex-wrap: wrap; /* Permet aux éléments de se placer en dessous quand l'espace devient trop petit */
+  background-color: none;
+  width: 100%;
 }
 
-.img1{
+.img1 {
   height: 500px;
   width: 700px;
-  margin-bottom: 5em;
-  margin-top: 5em;
-  margin-left: 8em;
+  margin: 5em 2em;
   border-radius: 15px;
   border: 3px solid #FEFEFE;
+  flex-shrink: 0; /* Empêche l'image de rétrécir quand l'écran est plus petit */
 }
 
 .board {
   display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    grid-gap: 1em;
-    grid-auto-rows: minmax(59px, 0px);
-    border-radius: 25px;
-    background: #20374b;
-    box-shadow: 7px 7px 4px #111d28, -7px -7px 4px #2f516e;
-    margin: 10em 0em 11em 8em;
-    padding: 0em 1em 0em 1em;
-    padding-top: 20px;
-    border: 3px solid #83a6c5;
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les selects */
+  grid-gap: 1em;
+  grid-auto-rows: minmax(59px, auto);
+  border-radius: 25px;
+  background: #20374b;
+  box-shadow: 7px 7px 4px #111d28, -7px -7px 4px #2f516e;
+  padding: 2em;
+  border: 3px solid #83a6c5;
+  width: 40%; /* Taille de la zone des selects, ajustable */
+  min-width: 300px; /* Empêche la réduction excessive */
+  margin: 5em 0;
 }
 
-@media only screen and (max-width: 1405px) {
+.select1, .select2, .select3, .select4, .select5, .select6, .select7 {
+  padding: 0.9em;
+  background-color: #fcc220;
+  color: #FEFEFE;
+  border-radius: 5px;
+  font-family: 'Gill Sans', sans-serif;
+  font-size: 1.2em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.2s;
+}
 
-  .board{
-    margin: 10em 0em 11em 4em;
+.select7 {
+  grid-column: span 2; /* Occupe deux colonnes pour le dernier select */
+  width: 100%;
+}
+
+.Valider {
+  margin: 2em auto;
+  display: block;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    flex-direction: column; /* Passe en colonne pour les petits écrans */
+    align-items: center;
   }
-  .img1{
-    height: 500px;
-    width: 700px;
-    margin: 5em 0em 5em 4em;
-    border-radius: 15px;
-    border: 3px solid #FEFEFE;
-  }
+  
+  .img1 {
+    width: 90%; /* L'image prend 90% de la largeur disponible */
+    height: auto; /* Conserve les proportions */
   }
 
-  @media only screen and (max-width: 1323px) {
-    .board{
-      margin: 10em 0em 6em 4em;
-    }
+  .board {
+    width: 90%; /* Le formulaire prend 90% de la largeur disponible */
+  }
+}
 
-    .img1{
-      height: 400px;
-  width: 600px;
-  margin-bottom: 5em;
-  margin-top: 7em;
-  margin-left: 2em;
-    }
-    }
+@media only screen and (max-width: 768px) {
+  .board {
+    grid-template-columns: 1fr; /* Une seule colonne pour les selects sur les petits écrans */
+  }
+
+  .select7 {
+    grid-column: span 1; /* Annule l'effet de deux colonnes sur petits écrans */
+  }
+  
+  .img1 {
+    width: 80%;
+  }
+}
+
 
 .select1, .select2, .select3, 
 .select4, .select5, .select6 {
