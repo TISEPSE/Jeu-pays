@@ -36,6 +36,27 @@ background-color: none;
     border: 3px solid #83a6c5;
 }
 
+@media only screen and (max-width: 1405px) {
+
+  .board{
+    margin: 10em 0em 11em 2em;
+  }
+  }
+
+  @media only screen and (max-width: 1323px) {
+    .board{
+      margin: 10em 0em 6em 4em;
+    }
+
+    .img1{
+      height: 400px;
+  width: 600px;
+  margin-bottom: 5em;
+  margin-top: 7em;
+  margin-left: 2em;
+    }
+    }
+
 .select1, .select2, .select3, 
 .select4, .select5, .select6 {
   padding: 0.9em 1em 1em 1em;
@@ -196,4 +217,4 @@ li {
 .a:hover{
   color: #fcc220; 
   background-color: #FEFEFE; 
-}
+}l
