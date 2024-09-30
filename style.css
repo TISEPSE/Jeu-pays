@@ -37,7 +37,7 @@ background-color: none;
   padding: 14px;
   display: flex;
   flex-direction: column;
-  margin-left: 1.5em;
+  margin-left: 0.5em;
   background-color: #fcc220 ;
   color: #FEFEFE;
   margin-top: 1.5em;
@@ -78,10 +78,6 @@ background-color: none;
 .red{
   transition: ease-in-out 0.5s;
   background-color: red;
-}
-
-.top-select{
-  margin-left: 4em;
 }
 
 .img2 {
