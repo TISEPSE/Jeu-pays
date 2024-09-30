@@ -245,8 +245,8 @@ li {
   text-transform: uppercase;
   color: #FEFEFE;
   background-color: #fcc220;
-  font-size: 1.2vh;
-  padding: 4px 15px;
+  font-size: 1.8vh;
+  padding: 5px 10px;
   border-radius: 5px; 
   margin: 5px;
   text-decoration: none;
@@ -259,9 +259,10 @@ li {
   color: #FEFEFE;
   background-color: #002533;
   border: 2px solid #FEFEFE;
-  font-size: 1.2vh;
+  font-size: 1.8vh;
+  padding: 5px 10px;
+  border-radius: 5px; 
   margin: 5px;
-  padding: 4px 8px;
   border-radius: 5px; 
   text-decoration: none;
   transition: ease-in-out 0.2s;
