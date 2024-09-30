@@ -23,6 +23,10 @@ background-color: none;
 }
 
 .board{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
   border-radius: 17px;
   background: #20374b;
   box-shadow:  7px 7px 4px #111d28, -7px -7px 4px #2f516e;
