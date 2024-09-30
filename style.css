@@ -62,36 +62,20 @@ background-color: #20374b;
   display: block;
 }
 
-@media only screen and (max-width: 1024px) {
-  .container {
-    flex-direction: column; /* Passe en colonne pour les petits écrans */
-    align-items: center;
-  }
-  
-  .img1 {
-    width: 90%; /* L'image prend 90% de la largeur disponible */
-    height: auto; /* Conserve les proportions */
-  }
-
-  .board {
-    width: 90%; /* Le formulaire prend 90% de la largeur disponible */
-  }
+.nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1em; 
+  background-color: #002533; 
 }
 
-@media only screen and (max-width: 768px) {
-  .board {
-    grid-template-columns: 1fr; /* Une seule colonne pour les selects sur les petits écrans */
-  }
-
-  .select7 {
-    grid-column: span 1; /* Annule l'effet de deux colonnes sur petits écrans */
-  }
-  
-  .img1 {
-    width: 80%;
-  }
+/* Styles par défaut */
+.img2 {
+  max-width: auto; /* Taille par défaut adaptée pour la navbar */
+  height: auto; /* Conserve les proportions */
+  background-color: #002533;
 }
-
 
 .select1, .select2, .select3, 
 .select4, .select5, .select6 {
@@ -161,17 +145,9 @@ background-color: #20374b;
 }
 
 .img2 {
-  background: none;
   height: 40px;
   width: 300px;
   margin: 0.5em; 
-}
-
-.container-img {
-  display: flex;
-  align-items: center; 
-  justify-content: space-between;
-  background-color: #002533;
 }
 
 .head{
@@ -193,15 +169,6 @@ ul {
 li {
   margin: 0 1.4em; 
 }
-
-.nav {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 1em; 
-  background-color: #002533; 
-}
-
 
 .nav-ul {
   display: flex; 
@@ -253,4 +220,54 @@ li {
 .a:hover{
   color: #fcc220; 
   background-color: #FEFEFE; 
+}
+
+@media only screen and (max-width: 1183px) {
+  .container {
+    flex-direction: column; /* Passe en colonne pour les petits écrans */
+    align-items: center;
+  }
+  
+  .img1 {
+    width: 90%; /* L'image principale prend 90% de la largeur disponible */
+    height: auto; /* Conserve les proportions */
+  }
+
+  .board {
+    width: 90%; /* Le formulaire prend 90% de la largeur disponible */
+  }
+
+  /* Rendre l'image du logo plus petite sur les écrans réduits */
+  .img2 {
+    max-width: 60%; /* Ajuste la taille pour les petits écrans */
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 806px) {
+  .board {
+    grid-template-columns: 1fr; /* Une seule colonne pour les selects sur les petits écrans */
+  }
+
+  .select7 {
+    grid-column: span 1; /* Annule l'effet de deux colonnes sur petits écrans */
+  }
+  
+  .img1 {
+    width: 80%; /* Réduit encore la taille de l'image principale */
+  }
+
+  /* Encore plus petite pour les très petits écrans */
+  .img2 {
+    position: absolute;
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #002533;
+}
 }
