@@ -271,7 +271,7 @@ li {
 
 .board {
   width: 100%;
-  padding: 1em; /* Moins de padding pour les très petits écrans */
+  margin-top: 1em;
 }
 
 }
