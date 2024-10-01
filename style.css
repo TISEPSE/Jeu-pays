@@ -175,7 +175,7 @@ li {
   background-color: #FEFEFE; 
 }
 
-@media only screen and (max-width: 1183px) {
+@media only screen and (max-width: 1225px) {
   
   .img1 {
     width: 90%; /* L'image principale prend 90% de la largeur disponible */
