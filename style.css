@@ -465,7 +465,6 @@ li {
   top: 36em;
   margin-left: 11%;
   z-index: 10000;
-  color: rgb(42, 165, 48);
 }
 
 .reset{
@@ -545,13 +544,12 @@ li {
   margin-left: 2%;
   transform: translateY(-3.3em);
   z-index: 10000;
-  color: brown;
 }
 
-.reset{
+.reset{ 
   position: relative;
   top: 0em;
-  margin-left: 50%;
+  margin-left: 72%;
   transform: translateY(-6em);
   z-index: 10000;
 }
