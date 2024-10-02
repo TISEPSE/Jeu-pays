@@ -423,6 +423,7 @@ li {
 
 @media only screen and (max-width: 888px) {
   .board {
+    margin-top: 0;
     grid-template-columns: 1fr;
     width: 90%; /* Adaptation de la largeur */
     display: flex;
@@ -450,12 +451,12 @@ li {
 }
 
 .Valider{
-  top: 72em;
+  top: 63em;
   margin-left: 22%;
 }
 
 .reset{
-  top: 72em;
+  top: 63em;
   margin-left: 55%;
 }
 
@@ -526,14 +527,14 @@ li {
 .Valider {
   position: fixed;
   top: 36em;
-  margin-left: 2%;
+  margin-left: 1%;
   z-index: 10000;
 }
 
 .reset{
   position: fixed;
   top: 36em;
-  margin-left: 72%;
+  margin-left: 71%;
   z-index: 10000;
 }
 
