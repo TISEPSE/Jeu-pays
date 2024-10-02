@@ -544,6 +544,7 @@ li {
   margin-left: 2%;
   transform: translateY(-3.3em);
   z-index: 10000;
+  color: brown;
 }
 
 .reset{
