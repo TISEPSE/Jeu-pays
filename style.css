@@ -539,17 +539,22 @@ li {
 }
 
 .Valider {
-  position: fixed;
-  top: 31.5em;
-  margin-left: 1%;
+  position: relative;
+  top: 0em;
+  margin-left: 2%;
   z-index: 10000;
 }
 
 .reset{
-  position: fixed;
-  top: 31.5em;
-  margin-left: 71%;
+  position: relative;
+  top: 0em;
+  margin-left: 50%;
+  transform: translateY(-2.6em);
   z-index: 10000;
+}
+
+.a{
+  display: none;
 }
 
 }
