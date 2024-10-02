@@ -212,12 +212,11 @@ body{
 
 .Valider {
   position: absolute;
-  margin-left: 42%;
-  margin-top: 4em;
+  margin-left: 35%;
+  bottom: 3em;
   height: 56px;
   width: 134px;
   cursor: pointer;
-  position: relative;
   padding: 5px 15px;
   font-size: 21px;
   color: #FEFEFE;
@@ -231,13 +230,12 @@ body{
 
 .reset{
   position: absolute;
-  margin-left: 5%;
-  margin-top: 5.5em;
+  margin-left: 50%;
+  bottom: 3em;
   position: absolute;
   height: 56px;
   width: 134px;
   cursor: pointer;
-  position: relative;
   padding: 5px 15px;
   font-size: 21px;
   color: #FEFEFE;
@@ -290,7 +288,8 @@ body{
 }
 
 .reset:hover{
-  color: #FEFEFE;
+  color: #212121;
+  background-color: #fcc220;
   scale: 1.1;
   box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
 }
@@ -405,10 +404,21 @@ li {
     top: 0;
     left: 0;
     width: 100%;
-    height: 189%;
+    height: 198%;
     overflow: hidden;
     background: none;
 }
+
+.Valider{
+  top: 72em;
+  margin-left: 30%;
+}
+
+.reset{
+  top: 72em;
+  margin-left: 53%;
+}
+
 }
 
 @media only screen and (max-width: 888px) {
@@ -438,6 +448,17 @@ li {
     background-color: #002533;
     z-index: 3;
 }
+
+.Valider{
+  top: 72em;
+  margin-left: 22%;
+}
+
+.reset{
+  top: 72em;
+  margin-left: 55%;
+}
+
 }
 
 @media only screen and (max-width: 510px) {
@@ -501,4 +522,19 @@ li {
   height: 139%;
   overflow: hidden;
 }
+
+.Valider {
+  position: fixed;
+  top: 36em;
+  margin-left: 2%;
+  z-index: 10000;
+}
+
+.reset{
+  position: fixed;
+  top: 36em;
+  margin-left: 72%;
+  z-index: 10000;
+}
+
 }
