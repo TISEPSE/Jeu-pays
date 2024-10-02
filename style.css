@@ -9,6 +9,7 @@ background-color: #20374b;
 
 .container-btn{
   top: 10em;
+  background: none;
 }
 
 .context {
@@ -561,7 +562,6 @@ top: 0em;
 margin-left: 54%;
 transform: translateY(-6em);
 z-index: 10000;
-color: brown;
 }
 
 .a{
