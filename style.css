@@ -444,10 +444,9 @@ li {
   }
   
   .img1 {
-    width: 90%; /* Réduit encore la taille de l'image principale */
+    width: 90%;
   }
 
-  /* Encore plus petite pour les très petits écrans */
   .esna, .img2 {
     display: none;
   }
@@ -464,14 +463,14 @@ li {
 .Valider {
   position: fixed;
   top: 36em;
-  margin-left: 13%;
+  margin-left: 11%;
   z-index: 10000;
 }
 
 .reset{
   position: fixed;
   top: 36em;
-  margin-left: 71%;
+  margin-left: 73%;
   z-index: 10000;
 }
 
@@ -541,14 +540,14 @@ li {
 
 .Valider {
   position: fixed;
-  top: 36em;
+  top: 31.5em;
   margin-left: 1%;
   z-index: 10000;
 }
 
 .reset{
   position: fixed;
-  top: 36em;
+  top: 31.5em;
   margin-left: 71%;
   z-index: 10000;
 }
