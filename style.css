@@ -552,13 +552,13 @@ position: relative;
 top: 0em;
 margin-left: 5%;
 transform: translateY(-3.3em);
-z-index: 10000;
+z-index: 10000; 
 }
 
 .reset{ 
 position: relative;
 top: 0em;
-margin-left: 60%;
+margin-left: 54%;
 transform: translateY(-6em);
 z-index: 10000;
 color: brown;
