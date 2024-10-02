@@ -8,8 +8,291 @@ background-color: #20374b;
 
 body{
   font-family: 'Exo', sans-serif;
+  background: none;
 }
 
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: none;
+  align-content: flex-end; 
+}
+
+.img1 {
+  height: 450px;
+  width: 650px; 
+  margin: 3em 0em;
+  border-radius: 15px;
+  border: 3px solid #FEFEFE;
+  flex-shrink: 0; /* Empêche l'image de rétrécir quand l'écran est plus petit */
+}
+
+.esna, .img2{
+  background: none;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les selects */
+  grid-gap: 1em;
+  grid-auto-rows: minmax(59px, auto);
+  border-radius: 25px;
+  background: #20374b;
+  box-shadow: 7px 7px 4px #111d28, -7px -7px 4px #2f516e;
+  padding: 2em;
+  border: 3px solid #83a6c5;
+  width: 45%;
+  min-width: 200px;
+  margin: 5em 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 1em; 
+  background-color: #002533; 
+}
+
+/* Styles par défaut */
+.esna, .img2 {
+  max-width: auto; /* Taille par défaut adaptée pour la navbar */
+  height: auto; /* Conserve les proportions */
+  background-color: #002533;
+}
+
+.select1, .select2, .select3, 
+.select4, .select5, .select6, .select7 {
+  padding: 0.9em 1em 1em 1em;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcc220;
+  color: #FEFEFE;
+  border-radius: 5px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.2em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.2s;
+  z-index: 2;
+}
+
+.Valider{
+  margin-left: 3em;
+  margin-bottom: 10px;
+  background-color: #fff;
+  height: 50px;
+  width: 70px;
+}
+
+.reset{
+  margin-left: 3em;
+  margin-bottom: 10px;
+  background-color: #fff;
+  height: 50px;
+  width: 70px;
+}
+
+.Valider:active, .reset:active{
+  background-color: bisque  ;
+}
+
+.green{
+ background-color: green;
+ transition: ease-in-out 0.3s;
+}
+
+.red{
+  transition: ease-in-out 0.3s;
+  background-color: red;
+}
+
+.esna, .img2 {
+  height: 40px;
+  width: 300px;
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.head{
+  z-index: 300;
+}
+
+ul {
+  background: none;
+  display: flex;
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.nav-ul {
+  display: flex; 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  z-index: 20;
+}
+
+li {
+  margin: 0 1em; 
+  background-color: #002533;
+}
+
+.Download{
+  display: flex;
+  align-items: center; 
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #FEFEFE;
+  background-color: #002533;
+  border: 2px solid #FEFEFE;
+  font-size: 1.6vh;
+  padding: 7px 14px;
+  border-radius: 5px; 
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+.Download:hover{
+  color: #002533; 
+  background-color: #FEFEFE; 
+}
+
+.a{
+  display: flex;
+  align-items: center; 
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #FEFEFE;
+  background-color: #fcc220;
+  font-size: 1.7vh;
+  padding: 7px 14px;
+  border-radius: 5px; 
+  border: 2px solid #FEFEFE;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+.a:hover{
+  color: #fcc220; 
+  background-color: #FEFEFE; 
+}
+
+@media only screen and (max-width: 1225px) {
+  
+  .img1 {
+    width: 90%; /* L'image principale prend 90% de la largeur disponible */
+    height: auto; /* Conserve les proportions */
+  }
+
+  .board {
+    width: 55%; /* Le formulaire prend 90% de la largeur disponible */
+  }
+
+  /* Rendre l'image du logo plus petite sur les écrans réduits */
+  .esna, .img2 {
+    max-width: 100%; /* Ajuste la taille pour les petits écrans */
+    height: 40px;
+
+  }
+}
+
+@media only screen and (max-width: 888px) {
+  .board {
+    grid-template-columns: 1fr;
+    width: 90%; /* Adaptation de la largeur */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .img1 {
+    width: 90%; /* Réduit encore la taille de l'image principale */
+  }
+
+  /* Encore plus petite pour les très petits écrans */
+  .esna, .img2 {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    background-color: #002533;
+    z-index: 3;
+}
+}
+
+@media only screen and (max-width: 510px) {
+  
+  .nav {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  padding: 1em; 
+  background-color: #002533; 
+}
+
+li {
+  margin: 0 0em; 
+  background-color: #002533;
+}
+
+.a{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #fefefe;
+  background-color: #fcc220;
+  font-size: 1.8vh;
+  padding: 5px 10px;
+  border-radius: 5px; 
+  margin: 5px;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+.Download{
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #FEFEFE;
+  background-color: #002533;
+  border: 2px solid #FEFEFE;
+  font-size: 1.8vh;
+  padding: 5px 10px;
+  border-radius: 5px; 
+  margin: 5px;
+  border-radius: 5px; 
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+.img1 {
+  width: 90%;
+  margin: 1em 0em;
+}
+
+.board {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99%;
+  height: 143%;
+  overflow: hidden;
+
+}
+}
 
 .context {
   width: 100%;
@@ -137,283 +420,4 @@ body{
       border-radius: 50%;
   }
 
-}
-
-.container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  background-color: none;
-  align-content: flex-end;
-}
-
-.img1 {
-  height: 450px;
-  width: 650px; 
-  margin: 3em 0em;
-  border-radius: 15px;
-  border: 3px solid #FEFEFE;
-  flex-shrink: 0; /* Empêche l'image de rétrécir quand l'écran est plus petit */
-}
-
-.esna, .img2{
-  background: none;
-}
-
-.board {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Deux colonnes pour les selects */
-  grid-gap: 1em;
-  grid-auto-rows: minmax(59px, auto);
-  border-radius: 25px;
-  background: #20374b;
-  box-shadow: 7px 7px 4px #111d28, -7px -7px 4px #2f516e;
-  padding: 2em;
-  border: 3px solid #83a6c5;
-  width: 45%;
-  min-width: 200px;
-  margin: 5em 0;
-}
-
-.nav {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  padding: 1em; 
-  background-color: #002533; 
-}
-
-/* Styles par défaut */
-.esna, .img2 {
-  max-width: auto; /* Taille par défaut adaptée pour la navbar */
-  height: auto; /* Conserve les proportions */
-  background-color: #002533;
-}
-
-.select1, .select2, .select3, 
-.select4, .select5, .select6, .select7 {
-  padding: 0.9em 1em 1em 1em;
-  display: flex;
-  flex-direction: column;
-  background-color: #fcc220;
-  color: #FEFEFE;
-  border-radius: 5px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 1.2em;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  transition: 0.2s;
-}
-
-.Valider{
-  margin-left: 3em;
-  margin-bottom: 10px;
-  background-color: #fff;
-  height: 50px;
-  width: 70px;
-}
-
-.reset{
-  margin-left: 3em;
-  margin-bottom: 10px;
-  background-color: #fff;
-  height: 50px;
-  width: 70px;
-}
-
-.Valider:active, .reset:active{
-  background-color: bisque  ;
-}
-
-.green{
- background-color: green;
- transition: ease-in-out 0.3s;
-}
-
-.red{
-  transition: ease-in-out 0.3s;
-  background-color: red;
-}
-
-.esna, .img2 {
-  height: 40px;
-  width: 300px;
-  margin-top: 0.5em;
-  margin-bottom: 1.5em;
-}
-
-.head{
-  background-color: #330014;
-}
-
-ul {
-  background: none;
-  display: flex;
-  list-style: none; 
-  padding: 0; 
-  margin: 0; 
-}
-
-.nav-ul {
-  display: flex; 
-  list-style: none; 
-  padding: 0; 
-  margin: 0; 
-}
-
-li {
-  margin: 0 1em; 
-  background-color: #002533;
-}
-
-.Download{
-  display: flex;
-  align-items: center; 
-  font-family: sans-serif;
-  text-transform: uppercase;
-  color: #FEFEFE;
-  background-color: #002533;
-  border: 2px solid #FEFEFE;
-  font-size: 1.6vh;
-  padding: 7px 14px;
-  border-radius: 5px; 
-  text-decoration: none;
-  transition: ease-in-out 0.2s;
-}
-
-.Download:hover{
-  color: #002533; 
-  background-color: #FEFEFE; 
-}
-
-.a{
-  display: flex;
-  align-items: center; 
-  font-family: sans-serif;
-  text-transform: uppercase;
-  color: #FEFEFE;
-  background-color: #fcc220;
-  font-size: 1.7vh;
-  padding: 7px 14px;
-  border-radius: 5px; 
-  border: 2px solid #FEFEFE;
-  text-decoration: none;
-  transition: ease-in-out 0.2s;
-}
-
-.a:hover{
-  color: #fcc220; 
-  background-color: #FEFEFE; 
-}
-
-@media only screen and (max-width: 1225px) {
-  
-  .img1 {
-    width: 90%; /* L'image principale prend 90% de la largeur disponible */
-    height: auto; /* Conserve les proportions */
-  }
-
-  .board {
-    width: 55%; /* Le formulaire prend 90% de la largeur disponible */
-  }
-
-  /* Rendre l'image du logo plus petite sur les écrans réduits */
-  .esna, .img2 {
-    max-width: 100%; /* Ajuste la taille pour les petits écrans */
-    height: 40px;
-
-  }
-}
-
-@media only screen and (max-width: 888px) {
-  .board {
-    grid-template-columns: 1fr;
-    width: 90%; /* Adaptation de la largeur */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .img1 {
-    width: 90%; /* Réduit encore la taille de l'image principale */
-  }
-
-  /* Encore plus petite pour les très petits écrans */
-  .esna, .img2 {
-    display: none;
-  }
-
-  .nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    background-color: #002533;
-}
-}
-
-@media only screen and (max-width: 510px) {
-  
-  .nav {
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  padding: 1em; 
-  background-color: #002533; 
-}
-
-li {
-  margin: 0 0em; 
-  background-color: #002533;
-}
-
-.a{
-  font-family: sans-serif;
-  text-transform: uppercase;
-  color: #FEFEFE;
-  background-color: #fcc220;
-  font-size: 1.8vh;
-  padding: 5px 10px;
-  border-radius: 5px; 
-  margin: 5px;
-  text-decoration: none;
-  transition: ease-in-out 0.2s;
-}
-
-.Download{
-  font-family: sans-serif;
-  text-transform: uppercase;
-  color: #FEFEFE;
-  background-color: #002533;
-  border: 2px solid #FEFEFE;
-  font-size: 1.8vh;
-  padding: 5px 10px;
-  border-radius: 5px; 
-  margin: 5px;
-  border-radius: 5px; 
-  text-decoration: none;
-  transition: ease-in-out 0.2s;
-}
-
-.img1 {
-  width: 90%;
-  margin: 1em 0em;
-}
-
-.board {
-  width: 100%;
-  margin-top: 1em;
-}
-
-.circles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 99%;
-  height: 143%;
-  overflow: hidden;
-}
 }
