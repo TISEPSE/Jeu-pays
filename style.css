@@ -385,7 +385,7 @@ color: #fcc220;
 background-color: #FEFEFE; 
 }
 
-@media only screen and (max-height: 740px) {
+@media only screen and (min-height: 600px) {
 
   .board{
     margin-top: 1em;
@@ -424,6 +424,8 @@ background-color: #FEFEFE;
   height: 40px;
 
 }
+
+
 
 .circles {
   position: absolute;
