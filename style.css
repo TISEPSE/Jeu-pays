@@ -386,10 +386,19 @@ color: #fcc220;
 background-color: #FEFEFE; 
 }
 
-@media (min-height: 653em) {
+@media (min-height: 653px) {
   .Valider{
-    color: green;
+    bottom: 5px;
   }
+
+  .reset{
+    bottom: 5px;
+  }
+
+  .img1{
+    margin-top: 1.5em;
+  }
+
 }
 
 @media only screen and (max-width: 1225px) {
