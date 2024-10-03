@@ -386,7 +386,7 @@ color: #fcc220;
 background-color: #FEFEFE; 
 }
 
-@media only screen and (max-height: 660px) {
+@media only screen and (max-height: 737px) {
 
   .board{
     margin-top: 1em;
