@@ -591,7 +591,7 @@ overflow: hidden;
 .Valider {
 position: relative;
 top: 0em;
-margin-left: 5%;
+margin-left: 8%;
 transform: translateY(-3.3em);
 z-index: 10000; 
 }
