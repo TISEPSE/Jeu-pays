@@ -386,14 +386,19 @@ color: #fcc220;
 background-color: #FEFEFE; 
 }
 
-@media only screen and (min-height: 653px) {
+@media only screen and (min-height: 630px) {
+
+  .board{
+    margin-top: 1em;
+  }
+
   .Valider{
-    bottom: 5px;
+    right: 20em;
     color: green;
   }
 
   .reset{
-    bottom: 5px;
+    right: 5em;
   }
 
   .img1{
