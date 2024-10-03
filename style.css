@@ -385,18 +385,39 @@ color: #fcc220;
 background-color: #FEFEFE; 
 }
 
-@media only screen and (max-height: 731px) { 
+@media only screen and (max-height: 721px) { 
 
   .board{
     margin-top: 1em;
   }
 
   .Valider{
-    right: 20em;
+    right: 19em;
   }
 
   .reset{
-    right: 5em;
+    right: 8em;
+  }
+
+  .img1{
+    margin-top: 1.5em;
+  }
+
+}
+
+@media only screen and (max-height: 721px) { 
+
+  .board{
+    margin-top: 1em;
+  }
+
+  .Valider{
+    right: -0.5em;
+  }
+
+  .reset{
+    right: 0em;
+    color: blue;
   }
 
   .img1{
