@@ -380,7 +380,6 @@ text-decoration: none;
 transition: ease-in-out 0.2s;
 }
 
-
 .a:hover{
 color: #fcc220; 
 background-color: #FEFEFE; 
@@ -399,7 +398,7 @@ background-color: #FEFEFE;
 
   .reset{
     right: 5em;
-    color: #212121;
+    color: #10da96;
   }
 
   .img1{
