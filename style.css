@@ -355,8 +355,8 @@ text-transform: uppercase;
 color: #FEFEFE;
 background-color: #002533;
 border: 2px solid #FEFEFE;
-font-size: 1.6vh;
-padding: 7px 14px;
+font-size: 2.2vh;
+  padding: 9px 16px;
 border-radius: 5px; 
 text-decoration: none;
 transition: ease-in-out 0.2s;
@@ -367,19 +367,19 @@ color: #002533;
 background-color: #FEFEFE; 
 }
 
-.a{
-display: flex;
-align-items: center; 
-font-family: sans-serif;
-text-transform: uppercase;
-color: #FEFEFE;
-background-color: #fcc220;
-font-size: 1.7vh;
-padding: 7px 14px;
-border-radius: 5px; 
-border: 2px solid #FEFEFE;
-text-decoration: none;
-transition: ease-in-out 0.2s;
+.a {
+  display: flex;
+  align-items: center;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: #FEFEFE;
+  background-color: #fcc220;
+  font-size: 2.2vh;
+  padding: 9px 16px;
+  border-radius: 5px;
+  border: 2px solid #FEFEFE;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
 }
 
 .a:hover{
@@ -480,7 +480,7 @@ background-color: #FEFEFE;
 
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 595px) {
 
 .nav {
 display: flex;
@@ -514,8 +514,8 @@ text-transform: uppercase;
 color: #FEFEFE;
 background-color: #002533;
 border: 2px solid #FEFEFE;
-font-size: 1.8vh;
-padding: 5px 10px;
+font-size: 2vh;
+padding: 9px 16px;
 border-radius: 5px; 
 margin: 5px;
 border-radius: 5px; 
