@@ -5,12 +5,15 @@
   font-weight: bold;
 background-color: #20374b; 
 }
-
-
-.container-btn{
-  top: 10em;
-  background: none;
-}
+  .container-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espace entre les boutons */
+    position: relative;
+    margin-top: 2em;
+    background: none;
+  }
 
 .context {
 width: 100%;
@@ -217,8 +220,8 @@ z-index: 2;
 
 .Valider {
 position: absolute;
-margin-left: 35%;
-bottom: 3em;
+bottom: 2em;
+right: 30%;
 height: 56px;
 width: 134px;
 cursor: pointer;
@@ -235,9 +238,8 @@ overflow: hidden;
 
 .reset{
 position: absolute;
-margin-left: 50%;
-bottom: 3em;
-position: absolute;
+bottom: 2em;
+right: 8%;
 height: 56px;
 width: 134px;
 cursor: pointer;
@@ -412,16 +414,6 @@ background-color: #FEFEFE;
   overflow: hidden;
   background: none;
 }
-
-.Valider{
-top: 72em;
-margin-left: 30%;
-}
-
-.reset{
-top: 72em;
-margin-left: 53%;
-}
 }
 
 @media only screen and (max-width: 888px) {
@@ -463,24 +455,6 @@ margin-left: 53%;
   z-index: 3;
 }
 
-.Valider {
-position: fixed;
-top: 36em;
-margin-left: 8%;
-z-index: 10000;
-}
-
-.reset{
-position: fixed;
-top: 36em;
-margin-left: 73%;
-z-index: 10000;
-}
-
-.container-btn {
-  position: relative;
-  top: 1em ;
-}
 }
 
 @media only screen and (max-height: 721px) { 
@@ -488,15 +462,6 @@ z-index: 10000;
   .board{
     margin-top: 1em;
   }
-
-  .Valider{
-    right: 19em;
-  }
-
-  .reset{
-    right: 8em;
-  }
-
   .img1{
     margin-top: 1.5em;
   }
@@ -507,14 +472,6 @@ z-index: 10000;
 
   .board{
     margin-top: 1em;
-  }
-
-  .Valider{
-    right: 18em;
-  }
-
-  .reset{
-    right: 9em;
   }
 
   .img1{
@@ -585,24 +542,22 @@ height: 153%;
 overflow: hidden;
 }
 
-.Valider {
-position: relative;
-top: 0em;
-margin-left: 8%;
-transform: translateY(-3.3em);
-z-index: 10000; 
-}
-
-.reset{ 
-position: relative;
-top: 0em;
-margin-left: 54%;
-transform: translateY(-6em);
-z-index: 10000;
-}
-
 .a{
 display: none;
 }
+
+}
+
+@media only screen and (max-height: 865px) and (max-width: 1225px){
+
+  .reset{
+    left: 55%;
+    bottom: 15px;
+  }
+
+  .Valider{
+    right: 55%;
+    bottom: 15px;
+  }
 
 }
