@@ -588,3 +588,7 @@ display: none;
 .container-fire{
 background: none;
 }
+
+canvas {
+  background-color: transparent;
+}
