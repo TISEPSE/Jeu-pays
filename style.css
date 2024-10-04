@@ -1,7 +1,3 @@
-body, html{
-  height: 100%;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -198,10 +194,9 @@ padding: 1em;
 background-color: #002533; 
 }
 
-/* Styles par défaut */
 .esna, .img2 {
-max-width: auto; /* Taille par défaut adaptée pour la navbar */
-height: auto; /* Conserve les proportions */
+max-width: auto; 
+height: auto; 
 background-color: #002533;
 }
 
@@ -394,17 +389,16 @@ background-color: #FEFEFE;
 @media only screen and (max-width: 1225px) {
 
 .img1 {
-  width: 90%; /* L'image principale prend 90% de la largeur disponible */
-  height: auto; /* Conserve les proportions */
+  width: 90%;
+  height: auto; 
 }
 
 .board {
-  width: 55%; /* Le formulaire prend 90% de la largeur disponible */
+  width: 55%; 
 }
 
-/* Rendre l'image du logo plus petite sur les écrans réduits */
 .esna, .img2 {
-  max-width: 100%; /* Ajuste la taille pour les petits écrans */
+  max-width: 100%; 
   height: 40px;
 
 }
@@ -461,7 +455,7 @@ background-color: #FEFEFE;
 .board {
   margin-top: 0;
   grid-template-columns: 1fr;
-  width: 90%; /* Adaptation de la largeur */
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -589,5 +583,8 @@ display: none;
     right: 55%;
     bottom: 15px;
   }
+}
 
+.container-fire{
+background: none;
 }

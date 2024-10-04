@@ -46,19 +46,11 @@ btnReset.addEventListener("click", () => {
   }
 })
 
-// const tbl = ["Afghanistan","Azerbaidjan","Kirghizistan","Pakistan","Tadjikistan","Turkm´enistan", "Ouzbékistan"]
+import confetti from 'https://cdn.skypack.dev/canvas-confetti';
+confetti();
 
-// let btnValider = document.getElementById('btnValider')
+function party(){
+  confetti()
+}
 
-// for (let i = 1; i <= 7; i++) {
-//     let select = document.querySelector(`.select${i}`);
-//     select.addEventListener('change', function () {
-//         console.log(select.options[this.selectedIndex].value);
-
-//         if(select.value === tbl[1]) {
-//             console.log("Le pays est correcte")
-//         } else{
-//             console.log("Le pays n'est pas bon")
-//         }
-//     });
-// }
+document.getElementById('confetti').addEventListener('click', party)
