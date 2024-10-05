@@ -19,14 +19,14 @@ const correctIndexes = {
   7: 2,
 }
 
-let btnValider = document.getElementById("btnValider") // Bouton qui vérifie si tout est correct
+let btnValider = document.getElementById("btnValider")
 
 btnValider.addEventListener("click", () => {
-  let allCorrect = true // Cette variable vérifie si tout est correct
+  let allCorrect = true // On vérifie si tout est correct
 
   for (let i = 1; i <= 7; i++) {
     let select = document.querySelector(`.select${i}`)
-    // Enlever les classes "green" et "red" à chaque changement d'option
+    // Enlever les classes "green" et "red" au début de la boucle
     select.classList.remove("green", "red")
 
     if (select.value === tbl[correctIndexes[i]]) {
@@ -35,7 +35,7 @@ btnValider.addEventListener("click", () => {
     } else {
       console.log("Le pays n'est pas correct")
       select.classList.add("red")
-      allCorrect = true // Si une option est incorrecte, tout n'est pas correct
+      allCorrect = false
     }
   }
 
@@ -49,6 +49,7 @@ btnValider.addEventListener("click", () => {
   })
 
   // Si toutes les sélections sont correctes, on affiche les confettis
+
   if (allCorrect) {
     const duration = 5 * 900,
       animationEnd = Date.now() + duration,
@@ -66,8 +67,7 @@ btnValider.addEventListener("click", () => {
       }
 
       const particleCount = 50 * (timeLeft / duration)
-
-      // since particles fall down, start a bit higher than random
+      
       confetti(
         Object.assign({}, defaults, {
           particleCount,
