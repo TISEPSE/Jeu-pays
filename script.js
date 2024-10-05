@@ -48,7 +48,7 @@ btnValider.addEventListener("click", () => {
     }
   })
 
-  // Si toutes les sélections sont correctes, on affiche les confettis
+  // Si toutes les balises "select" sont correctes, on affiche les confettis
 
   if (allCorrect) {
     const duration = 5 * 900,
@@ -67,7 +67,7 @@ btnValider.addEventListener("click", () => {
       }
 
       const particleCount = 50 * (timeLeft / duration)
-      
+
       confetti(
         Object.assign({}, defaults, {
           particleCount,
