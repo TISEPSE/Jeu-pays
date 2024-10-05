@@ -386,6 +386,19 @@ color: #fcc220;
 background-color: #FEFEFE; 
 }
 
+@media only screen and (max-height: 865px) and (max-width: 1225px){
+
+  .reset{
+    left: 55%;
+    bottom: 15px;
+  }
+
+  .Valider{
+    right: 55%;
+    bottom: 15px;
+  }
+}
+
 @media only screen and (max-width: 1225px) {
 
 .img1 {
@@ -562,7 +575,7 @@ position: absolute;
 top: 0;
 left: 0;
 width: 100%;
-height: 153%;
+height: 188%;
 overflow: hidden;
 }
 
@@ -570,19 +583,6 @@ overflow: hidden;
 display: none;
 }
 
-}
-
-@media only screen and (max-height: 865px) and (max-width: 1225px){
-
-  .reset{
-    left: 55%;
-    bottom: 15px;
-  }
-
-  .Valider{
-    right: 55%;
-    bottom: 15px;
-  }
 }
 
 canvas {
