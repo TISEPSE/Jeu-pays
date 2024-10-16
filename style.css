@@ -330,6 +330,7 @@ transition: ease-in-out 0.3s;
 .red{
 transition: ease-in-out 0.3s;
 background-color: red;
+border: solid 3px red;
 }
 
 .esna, .img2 {
