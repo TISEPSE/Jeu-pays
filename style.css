@@ -5,6 +5,15 @@
   font-weight: bold;
   z-index: 10000;
 }
+
+footer{
+  color: #ffffffcc;
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+  background: transparent;
+}
   .container-btn {
     display: flex;
     justify-content: center;
