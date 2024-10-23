@@ -3,6 +3,7 @@
   padding: 0;
   background-color: #20374b; 
   font-weight: bold;
+  font-family: 'Exo', sans-serif;
 }
 
 footer{
@@ -153,7 +154,6 @@ font-size: 50px;
 
 
 body{
-font-family: 'Exo', sans-serif;
 background: transparent;
 }
 
