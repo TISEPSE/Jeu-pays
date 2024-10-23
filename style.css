@@ -9,8 +9,8 @@
 footer{
   color: #ffffffcc;
   position: fixed;
-  bottom: 10px;
-  left: 40%;
+  bottom: 3px;
+  left: 35%;
   background: transparent;
 }
   .container-btn {
@@ -19,7 +19,7 @@ footer{
     align-items: center;
     gap: 20px; /* Espace entre les boutons */
     position: relative;
-    transform: translate(0,40px);
+    margin-top: 2em;
     background: none;
   }
 
@@ -193,13 +193,14 @@ border: 3px solid #83a6c5;
 font-size: 17px;
 width: 45%;
 min-width: 200px;
-transform: translate(0, -45px);
+margin: 4em 0 em 0;
 }
 
 .nav{
   display: flex;
   justify-content: center;
   margin: 1.5em;
+  background: transparent;
 }
 
 .nav-ul {
@@ -405,7 +406,7 @@ color: #fcc220;
 background-color: #FEFEFE; 
 }
 
-@media only screen and (max-height: 865px) and (max-width: 1225px){
+@media only screen and (max-height: 865px) and (max-width: 1405px){
 
   .board {
     transform: translate(0px, 10px);
@@ -420,26 +421,31 @@ background-color: #FEFEFE;
     border: 3px solid #83a6c5;
     width: 45%;
     min-width: 200px;
-    margin: 0em 0 6em 0;
-    }
-
-    footer{
-      display: none;
+    transform: translate(0,-45px);
     }
 
   .reset{
     left: 55%;
     bottom: 15px;
+    margin-left: 45px;
   }
 
   .Valider{
-    right: 55%;
     bottom: 15px;
+  }
+
+  .container-btn {
+    position: absolute;
+    right: 27%;
   }
 }
 
 @media only screen and (max-width: 1379px) {
 
+.container-btn{
+  margin-top: 5.5em;
+  right: 54%
+}
 
   .reset{
     left: 55%;
@@ -448,7 +454,6 @@ background-color: #FEFEFE;
 
   .Valider{
     right: 55%;
-    bottom: 15px;
   }
 
 .img1 {
@@ -501,9 +506,17 @@ background-color: #FEFEFE;
   scale: 1;
   }
 
+  .board{
+    transform: translate(0, 0%);
+  }
+
 }
 
 @media only screen and (max-width: 888px) {
+
+  footer{
+    display: none;
+  }
 
 .circles {
   position: absolute;
