@@ -7,6 +7,11 @@
     color: #FEFEFE;
   }
 
+  a{
+    padding: 15px;
+    background: transparent;
+  }
+
    .container{
     width: 40%;
     text-align: center;
@@ -98,10 +103,10 @@ top: 15%;
   }
 }
 
-footer{
+header{
   color: #ffffffcc;
   position: fixed;
-  bottom: 10px;
+  top: 10px;
   left: 40%;
   background: transparent;
 }
