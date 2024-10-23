@@ -19,7 +19,7 @@ footer{
     align-items: center;
     gap: 20px; /* Espace entre les boutons */
     position: relative;
-    margin-top: 2em;
+    transform: translate(0,40px);
     background: none;
   }
 
@@ -190,10 +190,10 @@ background: #20374b;
 box-shadow: 7px 7px 4px #111d28, -7px -7px 4px #2f516e;
 padding: 2em;
 border: 3px solid #83a6c5;
-font-size: large;
+font-size: 17px;
 width: 45%;
 min-width: 200px;
-margin: 4em 0 6em 0;
+transform: translate(0, -45px);
 }
 
 .nav{
