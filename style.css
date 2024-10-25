@@ -438,6 +438,8 @@ background-color: #FEFEFE;
   .container-btn {
     position: absolute;
     right: 27%;
+    margin-top: 2em;
+
   }
 }
 
