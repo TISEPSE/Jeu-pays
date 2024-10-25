@@ -83,3 +83,39 @@ btnValider.addEventListener("click", () => {
     }, 250)
   }
 })
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector(".board");
+  const options = [
+    "Afghanistan",
+    "Azerbaidjan",
+    "Kirghizistan",
+    "Pakistan",
+    "Tadjikistan",
+    "Turkménistan",
+    "Ouzbékistan"
+  ];
+
+  for (let i = 1; i <= 7; i++) {
+    // Création de l'élément select et de l'option par défaut
+    const select = document.createElement("select");
+    select.className = `select${i}`;
+    select.id = "list";
+
+    const defaultOption = document.createElement("option");
+    defaultOption.value = "";
+    defaultOption.textContent = `${i}: choose an option`;
+    select.appendChild(defaultOption);
+
+    // Ajout des options dynamiquement
+    options.forEach((optionText, index) => {
+      const option = document.createElement("option");
+      option.value = optionText;
+      option.textContent = `${i}: ${optionText}`;
+      select.appendChild(option);
+    });
+
+    // Ajout du select au container
+    container.appendChild(select);
+  }
+});
